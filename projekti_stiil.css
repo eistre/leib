@@ -48,3 +48,9 @@ background-color: black;
   .eemale {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
     padding-left:20px
   }
+
+  .kõrvuti { /*Paneb asjad kõrvuti*/
+    display:inline-block;
+    width:20%;
+    
+  }
