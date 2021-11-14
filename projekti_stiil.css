@@ -2,6 +2,8 @@
 body {
 color:white; /*kogu body tekst valge */
 background-color: black;
+background-image: url(https://solarsystem.nasa.gov/system/feature_items/images/82_carousel_neptune_1.jpg); /*neptuuni pilt*/
+background-repeat: no-repeat;      /*et pilt ei korduks*/
 
 }
 
@@ -38,7 +40,7 @@ background-color: black;
 
   .demo {     /*see on lihtsalt et näidata ülemise rea kinniolemist scrollimisel, ei ole projektiga kuidagi seotud*/
     color:brown;
-    background-color: blanchedalmond;
+    background-color:black;
     height:700px;
   }
   .keskele {    /*Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi*/
@@ -52,5 +54,19 @@ background-color: black;
   .kõrvuti { /*Paneb asjad kõrvuti*/
     display:inline-block;
     width:20%;
-    
+    border: 5px;
+    border-color: blue;
+ 
+  }
+
+  #lingikast { /*tekitab kastid, mis on tervenisti lingid*/
+    display:block;
+    height:auto;
+    width:auto;
+    background-color:bisque;
+
+  }
+
+  .minitekst { /*sest miks mitte, lõppversiooniks kustutan ära*/
+    font-size: xx-small;
   }
