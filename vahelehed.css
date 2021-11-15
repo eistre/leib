@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+/* Nav bar linkidega, eeskujuks kasutasin https://codepen.io/kevinpowell/pen/GrLKNo */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  position: relative;
+  float: right;
+  right: 5%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 100px;
+  padding-top: 20px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/* Nav bar lõpp */
+
+
+/*tekitab tulbad*/
+.tulp {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+  
+/* Minu arusaamist mööda see takistab mõne vea ilmumist
+Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id*/
+.rida:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.demo {     /*see on lihtsalt et näidata ülemise rea kinniolemist scrollimisel, ei ole projektiga kuidagi seotud*/
+  color:brown;
+  background-color:black;
+  height:700px;
+}
+.keskele {    /*Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi*/
+  text-align: center;
+}
+
+.eemale {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
+  padding-left:20px
+}
+
+#lingikast { /*tekitab kastid, mis on tervenisti lingid*/
+  display:block;
+  height:auto;
+  width:auto;
+  background-color:bisque;
+
+}
+
+.minitekst { /*sest miks mitte, lõppversiooniks kustutan ära*/
+  font-size: xx-small;
+}
