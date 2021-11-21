@@ -1,72 +1,100 @@
-/*Siin on asjad, mis mõjutavad kogu body üksust*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body {
-color:white; /*kogu body tekst valge */
-background-color: black;
-background-image: url(https://solarsystem.nasa.gov/system/feature_items/images/82_carousel_neptune_1.jpg); /*neptuuni pilt*/
-background-repeat: no-repeat;      /*et pilt ei korduks*/
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+h1 {
+  padding-left: 20px;
+  font-size:50px;
 
 }
+h2 {
+  font-size:35px;
+  font-weight: bold;
+}
+
+/* Nav bar linkidega, eeskujuks kasutasin https://codepen.io/kevinpowell/pen/GrLKNo */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  position: relative;
+  float: right;
+  right: 5%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 100px;
+  padding-top: 20px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/* Nav bar lõpp */
+
 
 /*tekitab tulbad*/
 .tulp {
-    float: left;
-    width: 50%;
-    padding: 10px;
-  }
-  
-  /* Minu arusaamist mööda see takistab mõne vea ilmumist
-  Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id*/
-  .rida:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  float: left;
+  width: 60%;
+  padding: 10px;
+}
 
-  /* Naelutab selles stiilis oleva ekraani tippu */
-  .ülemine {
-      width: 100%;                            /*kogu ekraani laiuses*/
-      margin:auto;
-      text-align: center;
-      position:fixed;                         /*see eraldab ülejäänud tekstist*/
-      left:0;
-      right:0px;
-      top:0;                                  /*Muudab kogu tekstikasti kõrgust*/
-      padding-top: 30px;                      /*kasti laius on kokku 30px tipust*/
-      box-sizing: border-box;
-      background-color: rgb(112, 49, 24);   /*kasti värv, ei saanud hetkel väga normiks, ilusat pruuni raske teha */
-      z-index: 9999;                          /*et oleks lehe kõige tipus*/
+/* Minu arusaamist mööda see takistab mõne vea ilmumist
+Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id*/
+.rida:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  }
+.keskele {    /*Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi*/
+  text-align: center;
+}
 
-  .demo {     /*see on lihtsalt et näidata ülemise rea kinniolemist scrollimisel, ei ole projektiga kuidagi seotud*/
-    color:brown;
-    background-color:black;
-    height:700px;
-  }
-  .keskele {    /*Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi*/
-    text-align: center;
-  }
+.eemale {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
+  padding-left:40px;
+  padding-right:100px;
+}
 
-  .eemale {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
-    padding-left:20px
-  }
-
-  .kõrvuti { /*Paneb asjad kõrvuti*/
-    display:inline-block;
-    width:20%;
-    border: 5px;
-    border-color: blue;
- 
-  }
-
-  #lingikast { /*tekitab kastid, mis on tervenisti lingid*/
-    display:block;
-    height:auto;
-    width:auto;
-    background-color:bisque;
-
-  }
-
-  .minitekst { /*sest miks mitte, lõppversiooniks kustutan ära*/
-    font-size: xx-small;
-  }
+.minitekst { /*sest miks mitte, lõppversiooniks kustutan ära*/
+  font-size: xx-small;
+}
