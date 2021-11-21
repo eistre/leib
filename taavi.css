@@ -1,0 +1,12 @@
+body {
+    background-image: url(https://www.publicdomainpictures.net/pictures/90000/velka/planet-earth-1401465698wt7.jpg);
+    background-repeat: no-repeat; /* Muidu oleks järjest väga palju pilte */
+    background-position-x: 55%;
+    background-position-y: 10%;
+    background-size: 30%;
+}
+
+.paremale {     /*liigutab peakirja paremale*/
+    padding-left: 71%;
+    padding-top: 3%;
+}

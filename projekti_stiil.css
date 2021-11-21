@@ -5,11 +5,22 @@ body {
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
+  font-size: 24px;
+}
+
+h1 {
+  padding-left: 20px;
+  font-size:50px;
+
+}
+h2 {
+  font-size:35px;
+  font-weight: bold;
 }
 
 /* Nav bar linkidega, eeskujuks kasutasin https://codepen.io/kevinpowell/pen/GrLKNo */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -61,12 +72,18 @@ nav a:hover::before {
 
 
 /*tekitab tulbad*/
-.tulp {
+.tulp_vasak {
   float: left;
+  margin-bottom: 5px;
   width: 50%;
-  padding: 10px;
 }
-  
+
+.tulp_parem {
+  float: right;
+  margin-bottom: 5px;
+  width: 50%;
+}
+
 /* Minu arusaamist mööda see takistab mõne vea ilmumist
 Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id*/
 .rida:after {
@@ -75,27 +92,24 @@ Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id*/
   clear: both;
 }
 
-.demo {     /*see on lihtsalt et näidata ülemise rea kinniolemist scrollimisel, ei ole projektiga kuidagi seotud*/
-  color:brown;
-  background-color:black;
-  height:700px;
-}
 .keskele {    /*Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi*/
   text-align: center;
 }
 
-.eemale {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
-  padding-left:20px
+.eemale_vasak {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
+  padding-left:40px;
+  padding-right:100px;
 }
 
-#lingikast { /*tekitab kastid, mis on tervenisti lingid*/
-  display:block;
-  height:auto;
-  width:auto;
-  background-color:bisque;
-
+.eemale_parem {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
+  padding-right:40px;
+  padding-left:100px;
 }
 
 .minitekst { /*sest miks mitte, lõppversiooniks kustutan ära*/
   font-size: xx-small;
+}
+
+.tühi_ruum {
+  height:200px
 }
