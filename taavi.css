@@ -1,12 +1,14 @@
+/* Tähtedega taust saadud https://pixabay.com/illustrations/stars-night-dark-sky-space-3750824/ */
 body {
-    background-image: url(https://www.publicdomainpictures.net/pictures/90000/velka/planet-earth-1401465698wt7.jpg);
-    background-repeat: no-repeat; /* Muidu oleks järjest väga palju pilte */
-    background-position-x: 55%;
-    background-position-y: 10%;
-    background-size: 30%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png), url(images/tähed.png);
+    background-repeat: no-repeat, repeat; /* Muidu oleks järjest väga palju pilte */
+    background-position-x: 50%, 0%; /* Liigutab taustapilte paremale */
+    background-position-y: 15%, 0%; /* Liigutab taustapilte alla */
+    background-size: 30%, 100%; /* Muudab taustapiltide suurust */
 }
 
-.paremale {     /*liigutab peakirja paremale*/
+/* Liigutab peakirja paremale */
+.paremale {
     padding-left: 71%;
     padding-top: 3%;
 }
