@@ -1,4 +1,6 @@
+
 /* Impordib google api'st 'Ubuntu' fondi */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body {
   margin: 0;
@@ -19,6 +21,7 @@ h2 {
   font-weight: bold;
 }
 
+
 /* Nav bar linkidega, eeskujuks oli https://codepen.io/kevinpowell/pen/GrLKNo */
 header {
   position: fixed; /* Hoiab headerit alati üleval ekraanil, isegi alla kerides */
@@ -27,6 +30,7 @@ header {
 }
 
 /* Sama mõttekäik mis allpool .rida'ga */
+
 header::after {
   content: '';
   display: table;
@@ -35,6 +39,7 @@ header::after {
 
 nav ul {
   position: relative;
+
   float: right; /* Liigutab listi paremale */
   right: 5%;
   margin: 0; /* Ilma margin määramata tekiks listi ja tipu vahel suurem vahe */
@@ -45,11 +50,14 @@ nav ul {
 nav li {
   display: inline-block; /* Hoiab listi elemendid horisontaalselt */
   margin-left: 100px; /* Iga elemendi 'border' suureneb 100px vasakule, tehes elementide vahe suuremaks */
+
   padding-top: 20px;
   position: relative;
 }
 
+
 /* Listis oleva teksti muutmine */
+
 nav a {
   color: white;
   text-decoration: none;
@@ -60,6 +68,7 @@ nav a {
 nav a::before {
   content: '';
   display: block;
+
   height: 5px; /* Animatsiooni laius */
   background-color: white;
   position: absolute;
@@ -70,6 +79,7 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%; /* Animatsiooni lõpus on riba laius 100% */
+
 }
 /* Nav bar lõpp */
 
@@ -89,20 +99,24 @@ nav a:hover::before {
 
 /* Minu arusaamist mööda see takistab mõne vea ilmumist
 Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id */
+
 .rida:after {
   content: "";
   display: table;
   clear: both;
 }
 
+
 .keskele {    /* Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi */
   text-align: center;
 }
 
 .eemale_vasak {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi */
+
   padding-left:40px;
   padding-right:100px;
 }
+
 
 .eemale_parem {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi */
   padding-right:40px;
@@ -115,4 +129,5 @@ Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id */
 
 .tühi_ruum {
   height:200px
+
 }
