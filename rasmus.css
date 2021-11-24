@@ -1,6 +1,10 @@
 /*Siin on asjad, mis mõjutavad kogu body üksust*/
 body {
-background-image: url(https://solarsystem.nasa.gov/system/feature_items/images/82_carousel_neptune_1.jpg), url(images/tähed.png); /*neptuuni pilt ja tähed*/
-background-repeat: no-repeat;      /*et pilt ei korduks*/
+background-image: url(images/neptuun_pealeht.png), url(images/tähed.png); /*neptuuni pilt ja tähed*/
+background-repeat: no-repeat, no-repeat; /*et pilt ei korduks*/
+
+/* Piltide asukohad*/
+background-position-x: 25%, 0%; 
+background-position-y: 15%, 0%;       
 }
 
