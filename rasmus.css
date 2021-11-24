@@ -3,6 +3,8 @@ body {
 background-image: url(https://solarsystem.nasa.gov/system/feature_items/images/82_carousel_neptune_1.jpg); /*neptuuni pilt*/
 background-repeat: no-repeat;      /*et pilt ei korduks*/
 }
+
 .tühi_ruum {
     height:200px
 }
+

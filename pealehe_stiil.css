@@ -3,55 +3,7 @@
   background-color: black;
   overflow: hidden;
   }
-  /*tekitab tulbad*/
-.tulp {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
 
-/* Minu arusaamist mööda see takistab mõne vea ilmumist
-Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id*/
-.rida:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Naelutab selles stiilis oleva ekraani tippu */
-.ülemine {
-  width: 100%;                            /*kogu ekraani laiuses*/
-  margin:auto;
-  text-align: center;
-  position:fixed;                         /*see eraldab ülejäänud tekstist*/
-  left:0;
-  right:0px;
-  top:0;                                  /*Muudab kogu tekstikasti kõrgust*/
-  padding-top: 30px;                      /*kasti laius on kokku 30px tipust*/
-  box-sizing: border-box;
-  background-color: rgb(112, 49, 24);   /*kasti värv, ei saanud hetkel väga normiks, ilusat pruuni raske teha */
-  z-index: 9999;                          /*et oleks lehe kõige tipus*/
-}
-.demo {     /*see on lihtsalt et näidata ülemise rea kinniolemist scrollimisel, ei ole projektiga kuidagi seotud*/
-  color:brown;
-  background-color: blanchedalmond;
-  height:700px;
-}
-.keskele {    /*Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi*/
-  text-align: center;
-}
-
-      .esileht {
-        position: absolute;
-        top: 60%
-      } 
-.eemale {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
-  padding-left:20px
-}
-
-.kõrvuti { /*Paneb asjad kõrvuti*/
-  display:inline-block;
-  width:33%;
-} 
 
 #pealkiri {
   font-size: xx-large;

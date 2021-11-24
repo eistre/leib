@@ -1,3 +1,6 @@
+
+/* Impordib google api'st 'Ubuntu' fondi */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 body {
   margin: 0;
@@ -18,12 +21,15 @@ h2 {
   font-weight: bold;
 }
 
-/* Nav bar linkidega, eeskujuks kasutasin https://codepen.io/kevinpowell/pen/GrLKNo */
+
+/* Nav bar linkidega, eeskujuks oli https://codepen.io/kevinpowell/pen/GrLKNo */
 header {
-  position: sticky;
+  position: fixed; /* Hoiab headerit alati üleval ekraanil, isegi alla kerides */
   top: 0;
-  width: 100%;
+  width: 100%; /* Header on terve ekraani laiusega */
 }
+
+/* Sama mõttekäik mis allpool .rida'ga */
 
 header::after {
   content: '';
@@ -33,19 +39,24 @@ header::after {
 
 nav ul {
   position: relative;
-  float: right;
+
+  float: right; /* Liigutab listi paremale */
   right: 5%;
-  margin: 0;
+  margin: 0; /* Ilma margin määramata tekiks listi ja tipu vahel suurem vahe */
   padding: 0;
-  list-style: none;
+  list-style: none; /* Eemaldab igasugused listi stiilid */
 }
 
 nav li {
-  display: inline-block;
-  margin-left: 100px;
+  display: inline-block; /* Hoiab listi elemendid horisontaalselt */
+  margin-left: 100px; /* Iga elemendi 'border' suureneb 100px vasakule, tehes elementide vahe suuremaks */
+
   padding-top: 20px;
   position: relative;
 }
+
+
+/* Listis oleva teksti muutmine */
 
 nav a {
   color: white;
@@ -57,44 +68,66 @@ nav a {
 nav a::before {
   content: '';
   display: block;
-  height: 5px;
+
+  height: 5px; /* Animatsiooni laius */
   background-color: white;
   position: absolute;
   top: 15%;
-  width: 0%;
-  transition: all ease-in-out 250ms;
+  width: 0%; /* Algselt on riba laius 0% */
+  transition: all ease-in-out 300ms; /* Animatsiooni kestvus on 300ms */
 }
 
 nav a:hover::before {
-  width: 100%;
+  width: 100%; /* Animatsiooni lõpus on riba laius 100% */
+
 }
 /* Nav bar lõpp */
 
 
-/*tekitab tulbad*/
-.tulp {
+/* Need kaks klassi jagavad lehe pooleks */
+.tulp_vasak {
   float: left;
-  width: 54%;
-  padding: 10px;
+  margin-bottom: 5px;
+  width: 50%;
+}
+
+.tulp_parem {
+  float: right;
+  margin-bottom: 5px;
+  width: 50%;
 }
 
 /* Minu arusaamist mööda see takistab mõne vea ilmumist
-Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id*/
+Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id */
+
 .rida:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.keskele {    /*Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi*/
+
+.keskele {    /* Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi */
   text-align: center;
 }
 
-.eemale {     /*Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi*/
+.eemale_vasak {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi */
+
   padding-left:40px;
   padding-right:100px;
 }
 
-.minitekst { /*sest miks mitte, lõppversiooniks kustutan ära*/
+
+.eemale_parem {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi */
+  padding-right:40px;
+  padding-left:100px;
+}
+
+.minitekst { /* Sest miks mitte, lõppversiooniks kustutan ära */
   font-size: xx-small;
+}
+
+.tühi_ruum {
+  height:200px
+
 }
