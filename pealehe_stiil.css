@@ -1,0 +1,34 @@
+/*Siin on asjad, mis mõjutavad kogu body üksust*/
+body {
+  color:white; /*kogu body tekst valge */
+  background-color: black;
+  overflow: hidden;
+  }
+
+#pealkiri {
+  font-size: xx-large;
+  font-family: "Raleway";
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#saturn {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+
+#maa {
+  position: absolute;
+  top: 40%;
+  left: 48%;
+}
+
+#neptuun {
+  position: absolute;
+  top: 30%;
+  right: 0%;
+}
