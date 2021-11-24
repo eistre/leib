@@ -1,5 +1,6 @@
 body {
-    background-image: url(http://assets.stickpng.com/images/580b585b2edbce24c47b270d.png), url(images/tähed.png);
+    background-image: url(images/saturn_pealeht.png), /*link: https://www.stickpng.com/img/nature/space/planets/saturn*/
+    url(images/tähed.png); /*link:  */
     background-repeat: no-repeat,no-repeat;      /*et pilt ei korduks*/
     /*piltide asukohad*/
     background-position-x: 40%, 0%; 
