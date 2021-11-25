@@ -123,10 +123,6 @@ Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id */
   padding-left:100px;
 }
 
-.minitekst { /* Sest miks mitte, lõppversiooniks kustutan ära */
-  font-size: xx-small;
-}
-
 .tühi_ruum {
   height:200px
 

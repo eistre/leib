@@ -9,7 +9,7 @@
   font-size: xx-large;
   font-family: "Raleway";
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 0;
   right: 0;
   text-align: center;
@@ -17,18 +17,18 @@
 
 #saturn {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 0%;
 }
 
 #maa {
   position: absolute;
-  top: 50%;
-  left: 42%;
+  top: 40%;
+  left: 48%;
 }
 
 #neptuun {
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: 0%;
 }
