@@ -32,3 +32,15 @@
   top: 30%;
   right: 0%;
 }
+
+/*Pildid paisuvad kursoriga peale minnes*/
+
+.img {
+  transition: transform .2s;
+}
+
+.pilt:hover { 
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); 
+}
