@@ -1,10 +1,11 @@
 /* Tähtedega taust saadud https://pixabay.com/illustrations/stars-night-dark-sky-space-3750824/ */
+/* Maa pilt saadud https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png */
 body {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png), url(images/tähed.png);
-    background-repeat: no-repeat, repeat; /* Muidu oleks järjest väga palju pilte */
+    background-image: url(images/maa_pealeht.png), url(images/tähed.png);
     background-position-x: 50%, 0%; /* Liigutab taustapilte paremale */
     background-position-y: 15%, 0%; /* Liigutab taustapilte alla */
-    background-size: 30%, 100%; /* Muudab taustapiltide suurust */
+    background-size: 45%; /* Muudab taustapiltide suurust */
+    background-repeat: no-repeat, repeat; /* Muidu oleks järjest väga palju pilte */
 }
 
 /* Liigutab peakirja paremale */
@@ -12,3 +13,8 @@ body {
     padding-left: 71%;
     padding-top: 3%;
 }
+
+img { /* Muudab kuu gifi suurust */
+    width: 45%;
+    height: auto;
+} 
