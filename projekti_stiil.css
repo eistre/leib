@@ -1,0 +1,114 @@
+
+/* Impordib google api'st 'Ubuntu' fondi */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+h1 {
+  padding-left: 20px;
+  font-size:50px;
+}
+
+h2 {
+  font-size:35px;
+  font-weight: bold;
+}
+
+
+/* Nav bar linkidega, eeskujuks oli https://codepen.io/kevinpowell/pen/GrLKNo */
+header {
+  position: fixed; /* Hoiab headerit alati üleval ekraanil, isegi alla kerides */
+  top: 0;
+  width: 100%; /* Header on terve ekraani laiusega */
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  position: relative;
+  float: right; /* Liigutab listi paremale */
+  right: 5%;
+  margin: 0; /* Ilma margin määramata tekiks listi ja tipu vahel suurem vahe */
+  padding: 0;
+  list-style: none; /* Eemaldab igasugused listi stiilid */
+}
+
+nav li {
+  display: inline-block; /* Hoiab listi elemendid horisontaalselt */
+  margin-left: 100px; /* Iga elemendi 'border' suureneb 100px vasakule, tehes elementide vahe suuremaks */
+  padding-top: 20px;
+  position: relative;
+}
+
+/* Listis oleva teksti muutmine */
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px; /* Animatsiooni laius */
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  width: 0%; /* Algselt on riba laius 0% */
+  transition: all ease-in-out 300ms; /* Animatsiooni kestvus on 300ms */
+}
+
+nav a:hover::before {
+  width: 100%; /* Animatsiooni lõpus on riba laius 100% */
+}
+/* Nav bar lõpp */
+
+/* Need kaks klassi jagavad lehe pooleks */
+.tulp_vasak {
+  float: left;
+  margin-bottom: 5px;
+  width: 50%;
+}
+
+.tulp_parem {
+  float: right;
+  margin-bottom: 5px;
+  width: 50%;
+}
+
+.keskele {    /* Kasutan seda, et teksti oma blokkides keskele saada */
+  text-align: center;
+}
+
+.eemale_vasak {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes */
+  padding-left:2vw;
+  padding-right:5vw;
+}
+
+
+.eemale_parem {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes */
+  padding-right:2vw;
+  padding-left:5vw;
+}
+
+.tühi_ruum {
+  height:30vh
+}
+
+iframe { /* Eemaldab videolt valge borderi ja hoiab videot kindla suurusega, */
+  border: 0; /* et akna suuruse muutudes ei liiguks video teksti kohale */
+  height: 30vh;
+  width: 25vw;
+}

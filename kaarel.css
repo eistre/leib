@@ -1,0 +1,9 @@
+body {
+    background-image: url(images/saturn_pealeht.png), /*link: https://www.stickpng.com/img/nature/space/planets/saturn*/
+    url(images/tähed.png); /*link: https://pixabay.com/illustrations/stars-night-dark-sky-space-3750824/ */
+    background-repeat: no-repeat,repeat;      /*et pilt ei korduks*/
+    /*piltide asukohad*/
+    background-size: 60vw,100%;
+    background-position-x: 40%, 0%; 
+    background-position-y: 20%, 0%; 
+    }

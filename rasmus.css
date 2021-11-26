@@ -1,0 +1,13 @@
+/*Neptuuni pildi allikas: https://solarsystem.nasa.gov/planets/neptune/overview/*/
+/*Tähtede pildi allikas: https://pixabay.com/illustrations/stars-night-dark-sky-space-3750824/ */
+
+body {
+background-image: url(images/neptuun_pealeht.png), url(images/tähed.png); /*neptuuni pilt ja tähed*/
+background-repeat: no-repeat, repeat; /*et pilt ei korduks*/
+background-size: 60vw,100%;
+
+/* Piltide asukohad*/
+background-position-x: 25%, 0%; 
+background-position-y: 15%, 0%;       
+}
+
