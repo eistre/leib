@@ -1,3 +1,6 @@
+/* Impordib google api'st 'Ubuntu' fondi */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  
   body {
   color:white; /*kogu body tekst valge */
   background-color: black;
@@ -7,7 +10,7 @@
 
 #pealkiri {
   font-size: xx-large;
-  font-family: "Raleway";
+  font-family: "Ubuntu", sans-serif;
   position: absolute;
   top: 15%;
   left: 0;
@@ -35,12 +38,11 @@
 
 /*Pildid paisuvad kursoriga peale minnes*/
 
-.img {
+.pilt {
+  height: 45vh;
   transition: transform .2s;
 }
 
 .pilt:hover { 
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }

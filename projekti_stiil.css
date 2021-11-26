@@ -124,7 +124,7 @@ Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id */
 }
 
 .tühi_ruum {
-  height:200px
+  height:75vh
 }
 
 iframe { /* Eemaldab videolt valge borderi ja hoiab videot kindla suurusega, */
