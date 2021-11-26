@@ -29,8 +29,6 @@ header {
   width: 100%; /* Header on terve ekraani laiusega */
 }
 
-/* Sama mõttekäik mis allpool .rida'ga */
-
 header::after {
   content: '';
   display: table;
@@ -39,7 +37,6 @@ header::after {
 
 nav ul {
   position: relative;
-
   float: right; /* Liigutab listi paremale */
   right: 5%;
   margin: 0; /* Ilma margin määramata tekiks listi ja tipu vahel suurem vahe */
@@ -50,14 +47,11 @@ nav ul {
 nav li {
   display: inline-block; /* Hoiab listi elemendid horisontaalselt */
   margin-left: 100px; /* Iga elemendi 'border' suureneb 100px vasakule, tehes elementide vahe suuremaks */
-
   padding-top: 20px;
   position: relative;
 }
 
-
 /* Listis oleva teksti muutmine */
-
 nav a {
   color: white;
   text-decoration: none;
@@ -68,7 +62,6 @@ nav a {
 nav a::before {
   content: '';
   display: block;
-
   height: 5px; /* Animatsiooni laius */
   background-color: white;
   position: absolute;
@@ -79,10 +72,8 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%; /* Animatsiooni lõpus on riba laius 100% */
-
 }
 /* Nav bar lõpp */
-
 
 /* Need kaks klassi jagavad lehe pooleks */
 .tulp_vasak {
@@ -97,34 +88,23 @@ nav a:hover::before {
   width: 50%;
 }
 
-/* Minu arusaamist mööda see takistab mõne vea ilmumist
-Pärast iga tekstirea kirjutamist eemaldab eemaldab float'id */
-
-.rida:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-.keskele {    /* Kasutan seda, et teksti oma blokkides keskele saada, hiljem saab integreerida teise klassi */
+.keskele {    /* Kasutan seda, et teksti oma blokkides keskele saada */
   text-align: center;
 }
 
-.eemale_vasak {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi */
-
-  padding-left:40px;
-  padding-right:100px;
+.eemale_vasak {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes */
+  padding-left:2vw;
+  padding-right:5vw;
 }
 
 
-.eemale_parem {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes, saab jällegi hiljem integreerida kuhugi */
-  padding-right:40px;
-  padding-left:100px;
+.eemale_parem {     /* Puhtalt selleks, et tekst ei oleks kogu aeg nii serva küljes */
+  padding-right:2vw;
+  padding-left:5vw;
 }
 
 .tühi_ruum {
-  height:75vh
+  height:30vh
 }
 
 iframe { /* Eemaldab videolt valge borderi ja hoiab videot kindla suurusega, */

@@ -4,7 +4,7 @@ body {
     background-image: url(images/maa_pealeht.png), url(images/tähed.png);
     background-position-x: 50%, 0%; /* Liigutab taustapilte paremale */
     background-position-y: 15%, 0%; /* Liigutab taustapilte alla */
-    background-size: 45%; /* Muudab taustapiltide suurust */
+    background-size: 40vw,100%; /* Muudab taustapiltide suurust */
     background-repeat: no-repeat, repeat; /* Muidu oleks järjest väga palju pilte */
 }
 
